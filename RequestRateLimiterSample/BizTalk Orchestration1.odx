@@ -1,0 +1,369 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="f564a43c-29e1-46a0-9fab-f1974c8d195c" LowerBound="1.1" HigherBound="83.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="RequestRateLimiterSample" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="PortType" OID="b1e3e4a6-64dc-41b7-b2ee-e1ab7992c7f1" ParentLink="Module_PortType" LowerBound="4.1" HigherBound="11.1">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType1" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="a7ae82cb-d434-4ad6-be5d-9283c8d337dd" ParentLink="PortType_OperationDeclaration" LowerBound="6.1" HigherBound="10.1">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="bd1b28c6-b085-445d-bd94-1eef926d64a0" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="8.13" HigherBound="8.20">
+                    <om:Property Name="Ref" Value="RequestRateLimiterSample.Schema1" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="a1535ebe-aa1c-40bb-af5e-a42b58d2838e" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="8.22" HigherBound="8.29">
+                    <om:Property Name="Ref" Value="RequestRateLimiterSample.Schema1" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="9feb1b3c-3398-40b8-a28b-717fc0102ec6" ParentLink="Module_PortType" LowerBound="11.1" HigherBound="18.1">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType2" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="548faac0-ccc8-4780-af71-c7d040ec3e63" ParentLink="PortType_OperationDeclaration" LowerBound="13.1" HigherBound="17.1">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="dd268f62-4923-4f84-b6be-a11ba3b2b91b" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="15.13" HigherBound="15.20">
+                    <om:Property Name="Ref" Value="RequestRateLimiterSample.Schema1" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="5ff8e752-af24-4685-bf88-c7349db0abef" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="15.22" HigherBound="15.29">
+                    <om:Property Name="Ref" Value="RequestRateLimiterSample.Schema1" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="ServiceDeclaration" OID="61cd94b9-356b-4bff-acea-685edc9aeb30" ParentLink="Module_ServiceDeclaration" LowerBound="18.1" HigherBound="82.1">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="BizTalk_Orchestration1" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="VariableDeclaration" OID="361070c6-bf55-462e-b88c-5dbac98639a1" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="29.1" HigherBound="30.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="RequestRateLimiterLibrary.RequestRateLimiter" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varRequestRateLimiter" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="1e66ef6d-e8ce-4194-bdb8-2ac470f04bbb" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="30.1" HigherBound="31.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Int32" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varLoopIndex" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="f5beda1e-8391-4a85-8e6e-fe7ff687e3df" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="31.1" HigherBound="32.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.TimeSpan" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varWaitTimespan" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="aa761f25-431e-443a-bdea-75fc21283b6c" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="25.1" HigherBound="26.1">
+                <om:Property Name="Type" Value="RequestRateLimiterSample.Schema1" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Message_1" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="e19b8c24-e9cb-4dc0-a629-54830cbaf626" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="26.1" HigherBound="27.1">
+                <om:Property Name="Type" Value="RequestRateLimiterSample.Schema1" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Message_2" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="875d3dd0-e8fe-437d-b05c-54e5269345fc" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="27.1" HigherBound="28.1">
+                <om:Property Name="Type" Value="RequestRateLimiterSample.Schema1" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Message_3" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="f834b16f-a3a1-436f-b92a-a8a43a521004" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="28.1" HigherBound="29.1">
+                <om:Property Name="Type" Value="RequestRateLimiterSample.Schema1" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Message_4" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="ServiceBody" OID="c88b17da-d7d7-42c0-bf17-cd0459bb11c1" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="Receive" OID="cd3d5ddd-fa0e-4514-abdc-ff7ce721fef1" ParentLink="ServiceBody_Statement" LowerBound="34.1" HigherBound="36.1">
+                    <om:Property Name="Activate" Value="True" />
+                    <om:Property Name="PortName" Value="Port1" />
+                    <om:Property Name="MessageName" Value="Message_1" />
+                    <om:Property Name="OperationName" Value="Operation_1" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Receive Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="VariableAssignment" OID="24ea5eb8-b93e-4d75-ab78-d720818aaf62" ParentLink="ServiceBody_Statement" LowerBound="36.1" HigherBound="39.1">
+                    <om:Property Name="Expression" Value="&#xD;&#xA;varRequestRateLimiter = new RequestRateLimiterLibrary.RequestRateLimiter(20, 10);" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Init rate limiter" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="VariableAssignment" OID="13d8f63f-cec0-4847-b6ac-498135838c69" ParentLink="ServiceBody_Statement" LowerBound="39.1" HigherBound="42.1">
+                    <om:Property Name="Expression" Value="&#xD;&#xA;varLoopIndex = 1;" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Init loop" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="While" OID="4b343a49-e2b2-4532-bd0a-c26b594a6620" ParentLink="ServiceBody_Statement" LowerBound="42.1" HigherBound="71.1">
+                    <om:Property Name="Expression" Value="varLoopIndex &lt;= 50" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Loop_Service_Call" />
+                    <om:Property Name="Signal" Value="False" />
+                    <om:Element Type="Construct" OID="eed58497-709f-47b8-ab74-3c9234a64df9" ParentLink="ComplexStatement_Statement" LowerBound="45.1" HigherBound="53.1">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="ConstructMessage" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="MessageAssignment" OID="1f663e59-bae3-4c7c-8545-7a05c6d9c804" ParentLink="ComplexStatement_Statement" LowerBound="48.1" HigherBound="52.1">
+                            <om:Property Name="Expression" Value="&#xD;&#xA;// Assign your request message here&#xD;&#xA;Message_3 = new System.Xml.XmlDocument();&#xD;&#xA;" />
+                            <om:Property Name="ReportToAnalyst" Value="False" />
+                            <om:Property Name="Name" Value="AssignMessage" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                        <om:Element Type="MessageRef" OID="9dbf81dc-46a5-46fb-a0f1-da932816f972" ParentLink="Construct_MessageRef" LowerBound="46.27" HigherBound="46.36">
+                            <om:Property Name="Ref" Value="Message_3" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="VariableAssignment" OID="e3c31725-e6b0-4fb2-a3a0-b42cd05414b5" ParentLink="ComplexStatement_Statement" LowerBound="53.1" HigherBound="55.1">
+                        <om:Property Name="Expression" Value="varWaitTimespan = varRequestRateLimiter.GetWaitDuration();" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Get Wait Time" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                    <om:Element Type="Decision" OID="71f8c4b3-2728-4ad1-bef1-56c9e34c53d2" ParentLink="ComplexStatement_Statement" LowerBound="55.1" HigherBound="61.1">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Must wait?" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="DecisionBranch" OID="9f709274-0fcc-463d-b661-f7fd61c3d510" ParentLink="ReallyComplexStatement_Branch" LowerBound="56.17" HigherBound="61.1">
+                            <om:Property Name="Expression" Value="varWaitTimespan != System.TimeSpan.Zero" />
+                            <om:Property Name="IsGhostBranch" Value="True" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Wait" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="Delay" OID="8ae9a841-93ec-47d8-a6e3-d4531ee948c9" ParentLink="ComplexStatement_Statement" LowerBound="58.1" HigherBound="60.1">
+                                <om:Property Name="Timeout" Value="varWaitTimespan;" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Delay" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="DecisionBranch" OID="9302a963-f429-4419-9d2b-a6f264a1f555" ParentLink="ReallyComplexStatement_Branch">
+                            <om:Property Name="IsGhostBranch" Value="True" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Else" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="VariableAssignment" OID="a3600150-db90-4743-8c9f-e6bb9d9a0168" ParentLink="ComplexStatement_Statement" LowerBound="61.1" HigherBound="63.1">
+                        <om:Property Name="Expression" Value="varRequestRateLimiter.Add();" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Add Request to Limiter" />
+                        <om:Property Name="Signal" Value="True" />
+                    </om:Element>
+                    <om:Element Type="Send" OID="152d6833-abe4-4f87-a75e-fb089be05a5b" ParentLink="ComplexStatement_Statement" LowerBound="63.1" HigherBound="65.1">
+                        <om:Property Name="PortName" Value="RateLimitedSendPort" />
+                        <om:Property Name="MessageName" Value="Message_3" />
+                        <om:Property Name="OperationName" Value="Operation_1" />
+                        <om:Property Name="OperationMessageName" Value="Request" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Send" />
+                        <om:Property Name="Signal" Value="True" />
+                    </om:Element>
+                    <om:Element Type="Receive" OID="3f6ee134-fe23-433e-8800-7c2e4db1f379" ParentLink="ComplexStatement_Statement" LowerBound="65.1" HigherBound="67.1">
+                        <om:Property Name="Activate" Value="False" />
+                        <om:Property Name="PortName" Value="RateLimitedSendPort" />
+                        <om:Property Name="MessageName" Value="Message_4" />
+                        <om:Property Name="OperationName" Value="Operation_1" />
+                        <om:Property Name="OperationMessageName" Value="Response" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Receive" />
+                        <om:Property Name="Signal" Value="True" />
+                    </om:Element>
+                    <om:Element Type="VariableAssignment" OID="1aa1d4ec-eec0-428b-af56-611affb33789" ParentLink="ComplexStatement_Statement" LowerBound="67.1" HigherBound="70.1">
+                        <om:Property Name="Expression" Value="&#xD;&#xA;varLoopIndex = varLoopIndex + 1;" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Incr counter" />
+                        <om:Property Name="Signal" Value="True" />
+                    </om:Element>
+                </om:Element>
+                <om:Element Type="Construct" OID="23b5d621-cb1d-46cf-b7ca-ec6b5a62d7e1" ParentLink="ServiceBody_Statement" LowerBound="71.1" HigherBound="78.1">
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Construct Response" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="MessageAssignment" OID="26029f88-3bfb-4290-b4d0-62ec85dece84" ParentLink="ComplexStatement_Statement" LowerBound="74.1" HigherBound="77.1">
+                        <om:Property Name="Expression" Value="// Construct your response message here, or earlier&#xD;&#xA;Message_2 = new System.Xml.XmlDocument();" />
+                        <om:Property Name="ReportToAnalyst" Value="False" />
+                        <om:Property Name="Name" Value="Assign message" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                    <om:Element Type="MessageRef" OID="05a7af7c-c31e-4916-9a3d-fe7e348f0113" ParentLink="Construct_MessageRef" LowerBound="72.23" HigherBound="72.32">
+                        <om:Property Name="Ref" Value="Message_2" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                </om:Element>
+                <om:Element Type="Send" OID="709ad1f9-ae58-41a5-837d-75e16493ca24" ParentLink="ServiceBody_Statement" LowerBound="78.1" HigherBound="80.1">
+                    <om:Property Name="PortName" Value="Port1" />
+                    <om:Property Name="MessageName" Value="Message_2" />
+                    <om:Property Name="OperationName" Value="Operation_1" />
+                    <om:Property Name="OperationMessageName" Value="Response" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Send Response" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="375f0c30-62da-4e40-a4a8-5149143552bd" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="21.1" HigherBound="23.1">
+                <om:Property Name="PortModifier" Value="Implements" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="RequestRateLimiterSample.PortType1" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Port1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="d146a4ca-4e98-469d-8e70-14be6e8c7885" ParentLink="PortDeclaration_CLRAttribute" LowerBound="21.1" HigherBound="22.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="09743ef2-0008-4c4e-882c-ed41a251c093" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="23.1" HigherBound="25.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="61" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="RequestRateLimiterSample.PortType2" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="RateLimitedSendPort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="5a871bb1-2cc1-41f7-a5d2-fb2dd50d5ec8" ParentLink="PortDeclaration_CLRAttribute" LowerBound="23.1" HigherBound="24.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module RequestRateLimiterSample
+{
+    internal porttype PortType1
+    {
+        requestresponse Operation_1
+        {
+            Schema1, Schema1
+        };
+    };
+    internal porttype PortType2
+    {
+        requestresponse Operation_1
+        {
+            Schema1, Schema1
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service BizTalk_Orchestration1
+    {
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port implements PortType1 Port1;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses PortType2 RateLimitedSendPort;
+        message Schema1 Message_1;
+        message Schema1 Message_2;
+        message Schema1 Message_3;
+        message Schema1 Message_4;
+        RequestRateLimiterLibrary.RequestRateLimiter varRequestRateLimiter;
+        System.Int32 varLoopIndex;
+        System.TimeSpan varWaitTimespan;
+        body ()
+        {
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("cd3d5ddd-fa0e-4514-abdc-ff7ce721fef1")]
+            activate receive (Port1.Operation_1, Message_1);
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("24ea5eb8-b93e-4d75-ab78-d720818aaf62")]
+            
+            varRequestRateLimiter = new RequestRateLimiterLibrary.RequestRateLimiter(20, 10);
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("13d8f63f-cec0-4847-b6ac-498135838c69")]
+            
+            varLoopIndex = 1;
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("4b343a49-e2b2-4532-bd0a-c26b594a6620")]
+            while (varLoopIndex <= 50)
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("eed58497-709f-47b8-ab74-3c9234a64df9")]
+                construct Message_3
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("1f663e59-bae3-4c7c-8545-7a05c6d9c804")]
+                    
+                    // Assign your request message here
+                    Message_3 = new System.Xml.XmlDocument();
+                }
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("e3c31725-e6b0-4fb2-a3a0-b42cd05414b5")]
+                varWaitTimespan = varRequestRateLimiter.GetWaitDuration();
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("71f8c4b3-2728-4ad1-bef1-56c9e34c53d2")]
+                if (varWaitTimespan != System.TimeSpan.Zero)
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("8ae9a841-93ec-47d8-a6e3-d4531ee948c9")]
+                    delay varWaitTimespan;
+                }
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("a3600150-db90-4743-8c9f-e6bb9d9a0168")]
+                varRequestRateLimiter.Add();
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("152d6833-abe4-4f87-a75e-fb089be05a5b")]
+                send (RateLimitedSendPort.Operation_1, Message_3);
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("3f6ee134-fe23-433e-8800-7c2e4db1f379")]
+                receive (RateLimitedSendPort.Operation_1, Message_4);
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("1aa1d4ec-eec0-428b-af56-611affb33789")]
+                
+                varLoopIndex = varLoopIndex + 1;
+            }
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("23b5d621-cb1d-46cf-b7ca-ec6b5a62d7e1")]
+            construct Message_2
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("26029f88-3bfb-4290-b4d0-62ec85dece84")]
+                // Construct your response message here, or earlier
+                Message_2 = new System.Xml.XmlDocument();
+            }
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("709ad1f9-ae58-41a5-837d-75e16493ca24")]
+            send (Port1.Operation_1, Message_2);
+        }
+    }
+}
+
